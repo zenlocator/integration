@@ -27,7 +27,9 @@ You can implement a simple form easily with Zen Store Locator:
 	**Note:** In practice it doesn't even have to be a zip code, it can be any type of address: city, state, region or even a country.
 	
 2. Insert the form wherever you want it to appear on your site. This is an unstyled form, but the end result will look something like this:
-
+	
+	![Custom form - example](https://raw.githubusercontent.com/zenstorelocator/integration/master/img/custom-form-example-1.png)
+	
 ### Passing in filter features:
 
 todo

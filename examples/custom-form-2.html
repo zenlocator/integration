@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom form - example</title>
+	</head>
+	<body>
+		<form method="get" action="https://zenstorelocator.com">
+			<p>
+				<label for="zip">Zip code:</label>
+				<input name="address" type="text" id="zip" placeholder="please enter zipcode" />
+			</p>
+			<p>
+				<span>Only locations with:</span>
+				<br/>
+				<label>
+					<input type="checkbox" name="filter[]" value="Sirena Espresso Machine" />
+					<span>Sirena Espresso Machine</span>
+				</label>
+				<br/>
+				<label>
+					<input type="checkbox" name="filter[]" value="Clover Crafted Small Batch Coffee" />
+					<span>Clover Crafted Small Batch Coffee</span>
+				</label>
+			</p>
+			<p>
+				<button>Search</button>
+			</p>
+		</form>
+	</body>
+</html>

@@ -21,14 +21,12 @@ The simplest way is to create a custom form that passes an `address` field to yo
 1. First, create a form where user will type in their zip code ([full html file here](https://github.com/zenstorelocator/integration/blob/master/examples/custom-form-simple.html)):
 	
 	```html
-	<form method="get" action="https://zenstorelocator.com">
+	<form method="get" action="https://zenstorelocator.com/demo">
 		<label for="zip">Zip code:</label>
 		<input name="address" type="text" id="zip" placeholder="please enter zipcode" />
 		<button>Search</button>
 	</form>
 	```
-	
-	We are using `https://zenstorelocator.com` which will work for example purposes. In your own form you would of course replace this URL with a URL of where *your own store locator is hosted* on your website (for example `http://example.com/store-locator`).
 	
 	The only input field on this form is named `address`, and this is exactly the field we will pass to the locator when user submits the form.
 	
@@ -47,7 +45,7 @@ If you have filters enabled on your account, you can also let your users narrow 
 1. Create a form with whatever filter parameters you have ([full html file here](https://github.com/zenstorelocator/integration/blob/master/examples/custom-form-with-filter.html)):
 	
 	```html
-	<form method="get" action="https://zenstorelocator.com">
+	<form method="get" action="https://zenstorelocator.com/demo">
 		<p>
 			<label for="zip">Zip code:</label>
 			<input name="address" type="text" id="zip" placeholder="please enter zipcode" />

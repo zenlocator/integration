@@ -1,10 +1,10 @@
-# Zen Store Locator Integration
+# ZenLocator Integration
 
-The following documentation describes form integration options with your [store locator](https://zenstorelocator.com/).
+The following documentation describes form integration options with your [store locator](https://zenlocator.com/).
 
 ## Demo
 
-Check out the [custom form demo](http://zenstorelocator.github.io/demo/custom-form/) here.
+Check out the [custom form demo](http://zenlocator.github.io/demo/custom-form/) here.
 
 ## Creating custom forms
 
@@ -18,10 +18,10 @@ You can implement this functionality the following way:
 
 The simplest way is to create a custom form that passes an `address` field to your locator page:
 
-1. First, create a form where user will type in their zip code ([full html file here](https://github.com/zenstorelocator/integration/blob/master/examples/custom-form-simple.html)):
+1. First, create a form where user will type in their zip code ([full html file here](https://github.com/zenlocator/integration/blob/master/examples/custom-form-simple.html)):
 	
 	```html
-	<form method="get" action="https://zenstorelocator.com/demo">
+	<form method="get" action="https://zenlocator.com/demo">
 		<label for="zip">Zip code:</label>
 		<input name="address" type="text" id="zip" placeholder="please enter zipcode" />
 		<button>Search</button>
@@ -34,7 +34,7 @@ The simplest way is to create a custom form that passes an `address` field to yo
 	
 2. Insert the form wherever you want it to appear on your site. This is an unstyled version, but the end result will look something like this:
 	
-	![Custom form - example](https://raw.githubusercontent.com/zenstorelocator/integration/master/img/custom-form-example-1.png)
+	![Custom form - example](https://raw.githubusercontent.com/zenlocator/integration/master/img/custom-form-example-1.png)
 	
 	Now your users can pass an address and be taken directly to that location on the map.
 	
@@ -42,10 +42,10 @@ The simplest way is to create a custom form that passes an `address` field to yo
 
 If you have filters enabled on your account, you can also let your users narrow down their search:
 
-1. Create a form with whatever filter parameters you have ([full html file here](https://github.com/zenstorelocator/integration/blob/master/examples/custom-form-with-filter.html)):
+1. Create a form with whatever filter parameters you have ([full html file here](https://github.com/zenlocator/integration/blob/master/examples/custom-form-with-filter.html)):
 	
 	```html
-	<form method="get" action="https://zenstorelocator.com/demo">
+	<form method="get" action="https://zenlocator.com/demo">
 		<p>
 			<label for="zip">Zip code:</label>
 			<input name="address" type="text" id="zip" placeholder="please enter zipcode" />
@@ -73,11 +73,11 @@ If you have filters enabled on your account, you can also let your users narrow 
 	
 2. Note that the filter input has brackets in the **name** attribute: `name="filter[]"`
 	
-	The **value** attribute has to match the name of your feature **_exactly_** as it is filled out in [your dashboard](https://zenstorelocator.com/filter).
+	The **value** attribute has to match the name of your feature **_exactly_** as it is filled out in [your dashboard](https://zenlocator.com/filter).
 	
 3. The form will now look like this (users can check one or several filters and your locator will adjust the search accordingly):
 	
-	![Custom form - example](https://raw.githubusercontent.com/zenstorelocator/integration/master/img/custom-form-example-2.png)
+	![Custom form - example](https://raw.githubusercontent.com/zenlocator/integration/master/img/custom-form-example-2.png)
 	
 ## Notes:
 
@@ -86,4 +86,4 @@ If you have filters enabled on your account, you can also let your users narrow 
 
 ## Something else?
 
-Can you think of other parameters you'd like to pass to your locator? Give us a shout at [support@zenstorelocator.com](mailto:support@zenstorelocator.com?subject=Integration) and we'll try to add them!
+Can you think of other parameters you'd like to pass to your locator? Give us a shout at [support@zenlocator.com](mailto:support@zenlocator.com?subject=Integration) and we'll try to add them!
